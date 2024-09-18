@@ -1,4 +1,3 @@
 [build]
-command = "npm run build"
-publish = "dist/analog/public"
-functions = "dist/analog"
+command = "ng build --configuration production"
+publish = "dist/ssr"
