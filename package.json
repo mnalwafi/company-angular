@@ -27,6 +27,7 @@
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/platform-server": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@netlify/angular-runtime": "^2.1.0",
     "front-matter": "^4.0.2",
     "marked": "^5.0.2",
     "marked-gfm-heading-id": "^3.1.0",
@@ -43,10 +44,10 @@
     "@analogjs/vitest-angular": "^1.7.3-beta.1",
     "@angular/cli": "^18.0.0",
     "@angular/compiler-cli": "^18.0.0",
-    "typescript": "~5.4.2",
-    "vite": "^5.0.0",
-    "tailwindcss": "^3.3.1",
+    "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
-    "autoprefixer": "^10.4.14"
+    "tailwindcss": "^3.3.1",
+    "typescript": "~5.4.2",
+    "vite": "^5.0.0"
   }
 }
