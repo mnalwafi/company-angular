@@ -74,7 +74,6 @@ export default class HomeComponent {
 
       // Cek jika elemen berada di setengah jendela
       if (description.top <= windowHeight / 2 && description.bottom >= windowHeight / 2) {
-        // Ubah warna latar belakang window menjadi merah
         this.renderer.setStyle(document.body, 'backgroundColor', '#B7DBD1');
       } else if (services.top <= windowHeight && services.bottom >= windowHeight / 2) {
         // Kembalikan warna latar belakang ke default (misal: putih)
