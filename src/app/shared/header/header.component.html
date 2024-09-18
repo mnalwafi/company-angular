@@ -1,0 +1,112 @@
+<section
+  class="h-screen w-screen overflow-hidden relative bg-[#1A1A1A] sm:p-0 p-4 pt-0"
+>
+  <section
+    class="w-full h-screen overflow-hidden flex sm:px-24 px-0 pt-36 sm:pt-40 flex-col items-center justify-start gap-16 chat-parent"
+  >
+    <section
+      class="w-full flex flex-col items-start justify-center gap-3 relative"
+    >
+      <article class="flex w-full flex-col gap-2 text-start">
+        <h1 class="text-xl text-[#D1C093]">Daun Salam Teknologi</h1>
+        <p class="text-xl max-w-3/4" #firstChat></p>
+      </article>
+      <section class="hide-y-axis w-full" #secondSession>
+        <article class="flex w-full flex-col gap-2 text-end items-end second-session">
+          <h1 class="text-xl text-[#8895D8]">You</h1>
+          <p class="text-xl w-3/4">Yes! How can I do that?</p>
+        </article>
+      </section>
+      <section class="hide-y-axis w-full" #thirdSession>
+        <article class="flex w-full flex-col gap-2 text-start">
+          <h1 class="text-xl text-[#D1C093]">Daun Salam Teknologi</h1>
+          <p class="text-xl max-w-3/4" #thirdChat></p>
+        </article>
+      </section>
+      <section class="hide-y-axis w-full" #fourthSession>
+        <article class="flex w-full flex-col gap-2 text-end items-end">
+          <h1 class="text-xl text-[#8895D8]">You</h1>
+          <p class="text-xl w-3/4">What benefits will I get?</p>
+        </article>
+      </section>
+      <section class="hide-y-axis w-full" #fifthSession>
+        <article class="flex w-full flex-col gap-2 text-start">
+          <h1 class="text-xl text-[#D1C093]">Daun Salam Teknologi</h1>
+          <p class="text-xl w-3/4" #fifthChat></p>
+        </article>
+      </section>
+      <section class="hide-y-axis w-full" #sixthSession>
+        <article class="flex w-full flex-col gap-2 text-end items-end">
+          <h1 class="text-xl text-[#8895D8]">You</h1>
+          <p class="text-xl w-3/4">Does that include AI services?</p>
+        </article>
+      </section>
+      <section class="hide-y-axis w-full" #seventhSession>
+        <article class="flex w-full flex-col gap-2 text-start">
+          <h1 class="text-xl text-[#D1C093]">Daun Salam Teknologi</h1>
+          <p class="text-xl w-3/4" #seventhChat></p>
+        </article>
+      </section>
+      <section class="hide-y-axis w-full" #eighthSession>
+        <article class="flex w-full flex-col gap-2 text-end mb-40 items-end">
+          <h1 class="text-xl text-[#8895D8]">You</h1>
+          <p class="text-xl w-3/4">Wow, Great!</p>
+        </article>
+      </section>
+    </section>
+  </section>
+  <article
+    class="w-[28rem] h-16 rounded-full items-center left-1/2 -translate-x-1/2 justify-between px-11 py-5 glass-background hidden md:flex cursor-pointer absolute bottom-12"
+    (click)="whatsapp()"
+  >
+    <h1 class="text-base text-white flex gap-4">
+      <svg
+        width="25"
+        height="24"
+        viewBox="0 0 25 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="whatsapp logo" clip-path="url(#clip0_305_979)">
+          <g id="Group">
+            <path
+              id="Vector"
+              d="M11.9181 0.0138947C5.5797 0.315692 0.577827 5.59434 0.597055 11.9399C0.60291 13.8726 1.0695 15.6968 1.89258 17.3086L0.628854 23.4429C0.560493 23.7747 0.859765 24.0653 1.1894 23.9872L7.20026 22.5631C8.74455 23.3324 10.4791 23.7767 12.3149 23.8047C18.7933 23.9037 24.1952 18.7596 24.3971 12.2836C24.6135 5.34173 18.8842 -0.317864 11.9181 0.0138947ZM19.0903 18.4934C17.33 20.2537 14.9895 21.2232 12.5 21.2232C11.0424 21.2232 9.64678 20.8961 8.35195 20.2511L7.51486 19.8341L3.82958 20.7073L4.60531 16.9416L4.19291 16.134C3.52072 14.8176 3.1799 13.3941 3.1799 11.903C3.1799 9.41353 4.14934 7.07307 5.90967 5.31268C7.65428 3.56808 10.033 2.58285 12.5002 2.58285C14.9897 2.5829 17.33 3.55235 19.0904 5.31263C20.8507 7.07296 21.8202 9.41341 21.8202 11.9029C21.8202 14.3702 20.8349 16.7488 19.0903 18.4934Z"
+              fill="#7AD06D"
+            />
+            <path
+              id="Vector_2"
+              d="M18.2768 14.4844L15.9712 13.8223C15.668 13.7353 15.3416 13.8213 15.1207 14.0464L14.5569 14.6208C14.3192 14.863 13.9584 14.9409 13.6438 14.8135C12.5531 14.3722 10.2588 12.3322 9.6729 11.3119C9.50386 11.0175 9.53182 10.6496 9.73937 10.381L10.2316 9.74418C10.4245 9.49467 10.4652 9.15959 10.3376 8.87116L9.3676 6.67725C9.13526 6.15177 8.46376 5.99881 8.02507 6.36983C7.38158 6.91407 6.61808 7.74111 6.52527 8.65735C6.36163 10.2728 7.05442 12.3091 9.67422 14.7543C12.7008 17.5791 15.1245 17.9523 16.7025 17.57C17.5976 17.3532 18.3129 16.4841 18.7643 15.7725C19.0721 15.2873 18.829 14.643 18.2768 14.4844Z"
+              fill="#7AD06D"
+            />
+          </g>
+        </g>
+        <defs>
+          <clipPath id="clip0_305_979">
+            <rect
+              width="24"
+              height="24"
+              fill="white"
+              transform="translate(0.5)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      Let's discuss on Whatsapp!
+    </h1>
+    <svg
+      width="17"
+      height="16"
+      viewBox="0 0 17 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M2.5 8C2.5 7.58579 2.83579 7.25 3.25 7.25L11.9393 7.25L8.71967 4.03033C8.42678 3.73744 8.42678 3.26256 8.71967 2.96967C9.01256 2.67678 9.48744 2.67678 9.78033 2.96967L14.2803 7.46967C14.5732 7.76256 14.5732 8.23744 14.2803 8.53033L9.78033 13.0303C9.48744 13.3232 9.01256 13.3232 8.71967 13.0303C8.42678 12.7374 8.42678 12.2626 8.71967 11.9697L11.9393 8.75L3.25 8.75C2.83579 8.75 2.5 8.41421 2.5 8Z"
+        fill="white"
+      />
+    </svg>
+  </article>
+</section>

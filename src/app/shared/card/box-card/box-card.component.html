@@ -1,0 +1,44 @@
+<article
+  [className]="
+    'lg:w-[524px] md:w-[412px] lg:h-[560px] md:h-[480px] w-[309px] h-[360px] sm:max-w-[49vw] lg:rounded-[56px] md:rounded-[48px] rounded-[36px] flex p-9 lg:p-12 flex-col justify-end items-center relative ' +
+    card?.background + ' ' + card?.stroke
+  "
+>
+  <figure
+    [className]="
+      'absolute left-1/2 -translate-x-1/2 ' +
+      card?.imageStyleTop +
+      ' ' +
+      card?.imageSize
+    "
+  >
+  <div *ngIf="card?.isSvg; then svg; else img"></div>
+  <ng-template #img>
+    <img [src]="card?.image" [alt]="card?.headerText + ' preview'" class="w-full h-full" />
+  </ng-template>
+  <ng-template #svg>
+    <section [innerHTML]="card?.isSvg" class="flex justify-center">
+
+    </section>
+  </ng-template>
+    <figcaption class="hidden">Angular</figcaption>
+  </figure>
+  <h1
+    [className]="
+      'text-start w-full lg:mb-4 mb-3 text-2xl font-bold lg:font-extrabold lg:text-5xl md:text-4xl ' +
+      card?.headerTextColor
+    "
+  >
+    <strong>
+      {{ card?.headerText + '.' }}
+    </strong>
+  </h1>
+  <p
+    [className]="
+      'text-start w-full lg:text-base md:text-[14px] sm:text-xs lg:leading-[16px] leading-[12px] text-[9px] ' +
+      card?.paragraphTextColor
+    "
+  >
+    {{ card?.paragraphText }}
+  </p>
+</article>
